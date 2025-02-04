@@ -9,7 +9,14 @@ app.set("port", 5000);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 const corsOptions = {
-  origin: "https://www.desarrolladorweb.site/appGastos/",
+  origin: [
+    "https://www.desarrolladorweb.site",
+    "https://desarrolladorweb.site",
+    "https://www.desarrolladorweb.site/appGastos/",
+    "https://desarrolladorweb.site/appGastos/",
+  ], // Agrega los dominios permitidos
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
   optionsSuccessStatus: 200,
 };
 
