@@ -5,23 +5,7 @@ const path = require("path");
 const clientDb = require("../mongodb");
 const { debug } = require("console");
 
-const filePath = path.join(
-  "C:",
-  "Users",
-  "LENOVO",
-  "OneDrive",
-  "Escritorio",
-  "Proyectos",
-  "easysavingjson",
-  "gastos.json"
-);
-const gastos = fs.readFileSync(filePath, "utf-8");
-const gasto = JSON.parse(gastos);
-
 router.get("/", async (req, res) => {
-  let gastos = fs.readFileSync(filePath, "utf-8");
-  let gasto = JSON.parse(gastos);
-
   try {
     // Seleccionar base de datos y colección
     const db = clientDb.db("gastospersonales");
