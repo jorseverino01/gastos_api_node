@@ -14,6 +14,7 @@ const corsOptions = {
     "https://desarrolladorweb.site",
     "https://www.desarrolladorweb.site/appGastos/",
     "https://desarrolladorweb.site/appGastos/",
+    "http://127.0.0.1:5500",
   ], // Agrega los dominios permitidos
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
